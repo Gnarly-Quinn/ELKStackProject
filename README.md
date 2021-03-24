@@ -1,11 +1,13 @@
 Automated ELK Stack Deployment
 *The files in this repository were used to configure the network depicted below.
-(Insert your diagram pic link_
+
+https://github.com/Gnarly-Quinn/ElkStackProject/blob/main/Diagrams/diagram%20for%20elk%20stack.PNG
+
  
 *These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Project 1 file may be used to install only certain pieces of it, such as Filebeat.
  
-Insert filebeat playbook .yml
-And filebeat configuration .yml
+https://github.com/Gnarly-Quinn/ElkStackProject/blob/main/Ansible/filebeat-playbook.yml
+https://github.com/Gnarly-Quinn/ElkStackProject/blob/main/Linux/filebeat-configuration.yml
  
 *This document contains the following details:
 Description of the Topology
@@ -91,7 +93,8 @@ Go to /etc/ansible/roles directory and create the ELK playbook (myplaybook-elk.y
 Ran the myplaybook-elk.yml in that same directory (ansible-playbook myplaybook-elk.yml)
 Then, SSH into the ELK-SERVER to verify the server is up and running.
 *The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
-(insert sudo docker ps.png)
+
+https://github.com/Gnarly-Quinn/ElkStackProject/blob/main/Images/sudo%20docker%20ps.PNG
  
 Target Machines & Beats
 *This ELK server is configured to monitor the following machines:
@@ -99,8 +102,8 @@ List the IP addresses of the machines you are monitoring
 Web-1 (10.0.0.5)
 Web-2 (10.0.0.6)
 We have installed the following Beats on these machines:
-(insert filebeat data success.png)
-(insert metric beat data success.png)
+https://github.com/Gnarly-Quinn/ElkStackProject/blob/main/Images/filebeat%20data%20success.PNG
+https://github.com/Gnarly-Quinn/ElkStackProject/blob/main/Images/metricbeat%20data%20success.PNG
 *These Beats allow us to collect the following information from each machine:
 In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., Winlogbeat collects Windows logs, which we use to track user logon events, etc._
 Filebeat is used to collect log files from specific files on remote machines.The azure module retrieves different types of log data from Azure. Some of these include: activitylogs, platformlogs, signinlogs, and auditlogs.
